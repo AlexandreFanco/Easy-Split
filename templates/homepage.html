@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Easy Split</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu-item active" id="my-events">My Events</div>
+            <div class="menu-item" id="my-tickets">My Tickets</div>
+            <div class="menu-item" id="browse-events">Browse Events</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content" id="content-area">
+            <h1>My Events</h1>
+            <div class="events-container">
+                <!-- Event placeholders -->
+                <div class="event-card">
+                    <h2>Event Name</h2>
+                    <p>Date: 2024-01-01</p>
+                    <p>Location: Online</p>
+                </div>
+                <div class="event-card">
+                    <h2>Event Name</h2>
+                    <p>Date: 2024-01-02</p>
+                    <p>Location: New York</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

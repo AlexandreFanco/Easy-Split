@@ -1,0 +1,78 @@
+/* General layout */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Lexend', sans-serif;
+    background: linear-gradient(to bottom right, #003780 50%, #62a1f1 50%);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #003780;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    width: 80%;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #2b68b8;
+}
+
+.menu-item.active {
+    background-color: #0f76fb;
+}
+
+/* Content area */
+.content {
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.content h1 {
+    color: #003780;
+    margin-bottom: 20px;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Event card */
+.event-card {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+
+.event-card h2 {
+    color: #003780;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #2b68b8;
+    margin: 5px 0;
+}

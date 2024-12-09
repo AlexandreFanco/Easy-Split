@@ -1,0 +1,98 @@
+/* Importando a fonte Lexend */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap');
+
+/* Estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lexend', sans-serif; /* Fonte Lexend aplicada globalmente */
+    background: linear-gradient(to bottom right, #003780 50%, #62a1f1 50%),
+                linear-gradient(to bottom left, #2b68b8 50%, #0f76fb 50%);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+/* Caixa centralizada */
+.login-container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+/* Título */
+.login-container h1 {
+    color: #003780;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif; /* Garante Lexend no título */
+}
+
+/* Formulário */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b0c9e9;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Lexend', sans-serif; /* Fonte Lexend nos campos */
+}
+
+.login-container form input:focus {
+    border-color: #0f76fb;
+    box-shadow: 0 0 3px rgba(15, 118, 251, 0.5);
+}
+
+/* Botão */
+.login-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0f76fb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Lexend', sans-serif; /* Fonte Lexend no botão */
+}
+
+.login-container button:hover {
+    background-color: #62a1f1;
+}
+
+.login-container button:active {
+    background-color: #2b68b8;
+}
+
+/* Texto e link */
+.login-container p {
+    color: #2b68b8;
+    margin-top: 20px;
+    font-size:16px; /* Mantém o tamanho consistente */
+    font-family: 'Lexend', sans-serif; /* Garante Lexend no texto */
+}
+
+.login-container p a {
+    color: #0f76fb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
